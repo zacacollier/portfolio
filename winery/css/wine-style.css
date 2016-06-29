@@ -1,0 +1,347 @@
+.clear-fix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+}
+
+.opaque-navbar {
+    background-color: rgba(0,0,0,0.5);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+    height: 50px;
+    border-bottom: 0px;
+    transition: background-color .5s ease 0s;
+}
+
+.opaque-navbar.opaque {
+    background-color: black;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+ul.dropdown-menu {
+    background-color: black;
+}
+
+
+@media (max-width: 992px) {
+  body
+  {
+    background:red;
+  }
+  .opaque-navbar {
+    background-color: black;
+    height: 60px;
+    transition: background-color .5s ease 0s;
+}
+
+}
+
+.navbar li{ color: #000; }
+
+nav a {
+    margin-left: 15px;
+    color: rgba(41, 41, 41, 0.4);
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-bottom: 2px solid whitesmoke;
+}
+
+#home{
+    background: linear-gradient(to bottom, rgba(20, 20, 20, 0.9) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/wine-bg.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+#home2{
+    background: linear-gradient(to bottom, rgba(20, 20, 20, 0.9) 0%, rgba(0, 0, 0, 0.2) 100%), url('../img/wine13.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+#home3{
+    background: linear-gradient(to bottom, rgba(20, 20, 20, 0.9) 0%, rgba(0, 0, 0, 0.2) 100%),
+                url('../img/wine12.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+.img-window {
+    /*background-color: #ff00ff;*/
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    height: 1000px;
+    data-diff: 100;
+    position: relative;
+    -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+.img-window div {
+  /*position: absolute;*/
+
+}
+
+
+.copy-window  {
+  height: 500px;
+  border: 1px solid red;
+}
+
+
+
+.sprayer  {
+  background-image: url("../img/wine16.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+#legacy{
+  padding: 125px 125px;
+  height: 500px;
+}
+
+#legacy h2  {
+  color: gray;
+  font-style: italic;
+  font-family: serif;
+}
+
+.home2-copy {
+  padding: 350px 250px;
+}
+
+/*SHOP SECTION*/
+
+.shop-window  {
+  height: 800px;
+  border: 1px solid red;
+}
+
+.bottles  {
+  padding: 0;
+}
+.bottle-pane  {
+  border: 1px dotted green;
+  height: 800px;
+  padding: 0 15px;
+}
+
+.bottle-image {
+  background-image: url("../img/wine3.jpg");
+  height: 600px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid darkgray;
+  margin-bottom: 30px;
+}
+
+#chard {
+  background-image: url("../img/wine6.jpg");
+}
+
+#cab  {
+  background-image: url("../img/wine7.jpg");
+}
+
+.bottle-pane h3{
+  font-style:italic;
+}
+
+.bottle-pane p{
+  line-height: 25px;
+  margin-bottom: 20px;
+
+}
+
+.bottle-button p {
+  text-align: center;
+  background-color: rgb(145,160,92);
+  line-height: 40px;
+  color: white;
+}
+
+.bottle-button p:hover{
+    background-color: rgba(145,160,92,.6);
+    transition: background-color .3s;
+}
+
+.pouring  {
+  background-image: url("../img/wine15.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  overflow: hidden;
+  padding: 0;
+}
+
+.best-copy  {
+  padding: 50px 100px;
+  position: absolute;
+}
+
+#home3 h1 {
+  margin-top: 150px;
+  font-style: italic;
+}
+
+.best{
+  background-size: contain;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  margin: 50px;
+  /*position: absolute;*/
+}
+
+#best1  {
+  background-image: url("../img/best1.png");
+}
+
+#best2  {
+  background-image: url("../img/best2.png");
+}
+
+#best3 {
+  background-image: url("../img/best3.png");
+}
+
+#joinus{
+  padding: 100px 75px;
+  height: 500px;
+}
+
+#joinus h2  {
+  color: black;
+  font-style: italic;
+  font-family: serif;
+  padding: 20px 0;
+}
+
+#joinus > p {
+  padding: 30px 0;
+  line-height: 30px;
+  border-bottom: 1px solid darkgray;
+  color: darkgray;
+}
+
+#joinus h4  {
+  color: darkgray;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+#joinus h5  {
+  color: darkgray;
+  line-height: 10px;
+  font-size: 12px
+}
+
+.footer {
+  background-color: rgb(41, 41, 41);
+  color: whitesmoke;
+  height: 400px;
+  padding: 75px 0;
+}
+
+.footer h1  {
+  font-style: italic;
+}
+
+.footer p{
+  padding: 15px 0;
+  font-size: 18px;
+}
+.footer div{
+  padding: 30px 0;
+}
+
+.footer input{
+  width: 300px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  border: 2.5px solid white;
+  margin: 0px 5px;
+}
+
+.footer button{
+  width: 300px;
+  height: 40px;
+  background-color: rgb(145,160,92);
+  border: none;
+  margin: 0px 5px;
+}
+
+.footer button:hover{
+    border: 2.5px solid white;
+}
+
+.footer a{
+    color: rgb(147,147,147);
+    padding: 50px 20px;
+}
+
+.footer a:hover {
+    color: white;
+    padding: 50px 20px 20px;
+    border-bottom: 2.5px solid white;
+
+}
+
+
+/*#home h2 {
+    font-size: 4em;
+}
+
+#home div {
+    margin-top: 100px;
+}
+
+#home q {
+    font-style: italic;
+}
+
+#about div {
+    width: 45%;
+    float: left;
+}
+
+#about div:first-child {
+    text-align: center;
+    padding-left: 120px;
+    padding-top: 150px;
+}
+
+#about div:first-child p:first-child{
+    font-weight: bold;
+    color: #999;
+}
+
+#about div:first-child *{
+    margin-bottom: 10px;
+}
+
+#about div:first-child h3{
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#about div:last-child {
+    text-align: center;
+}
+#about div:last-child img {
+    width: 50%;
+}*/
